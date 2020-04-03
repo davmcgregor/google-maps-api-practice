@@ -308,3 +308,157 @@ Processing by PlacesController#index as HTML
 Completed 200 OK in 72ms (Views: 53.7ms | ActiveRecord: 1.1ms | Allocations: 13094)
 
 
+Started GET "/" for ::1 at 2020-04-03 18:55:26 +0100
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/davidmcgregor/.rvm/gems/ruby-2.7.0/gems/railties-6.0.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/davidmcgregor/.rvm/gems/ruby-2.7.0/gems/railties-6.0.2.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 24.7ms | Allocations: 295)
+Completed 200 OK in 48ms (Views: 29.4ms | ActiveRecord: 0.0ms | Allocations: 1797)
+
+
+Started GET "/places/1" for ::1 at 2020-04-03 18:55:44 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (2.9ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (Duration: 6.1ms | Allocations: 328)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 107ms (Views: 58.8ms | ActiveRecord: 4.5ms | Allocations: 11942)
+
+
+Started GET "/places" for ::1 at 2020-04-03 18:55:45 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.3ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:16
+  Rendered places/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1407)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.3ms | Allocations: 5439)
+
+
+Started GET "/places" for ::1 at 2020-04-03 18:56:26 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:16
+  Rendered places/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1316)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.2ms | Allocations: 6123)
+
+
+Started GET "/places" for ::1 at 2020-04-03 18:56:27 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.3ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:16
+  Rendered places/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1054)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.3ms | Allocations: 4947)
+
+
+Started GET "/places" for ::1 at 2020-04-03 18:56:55 +0100
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.3ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:16
+  Rendered places/index.html.erb within layouts/application (Duration: 74.6ms | Allocations: 4907)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 203ms (Views: 165.4ms | ActiveRecord: 2.2ms | Allocations: 12946)
+
+
+Started GET "/places/1" for ::1 at 2020-04-03 18:56:58 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.3ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1010)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 25.7ms | ActiveRecord: 0.3ms | Allocations: 5842)
+
+
+Started GET "/places/1" for ::1 at 2020-04-03 19:01:54 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.3ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 36.6ms | ActiveRecord: 0.3ms | Allocations: 4503)
+
+
+Started GET "/places/1" for ::1 at 2020-04-03 19:01:55 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 135)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 4524)
+
+
+Started GET "/places/1" for ::1 at 2020-04-03 19:05:13 +0100
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (Duration: 34.2ms | Allocations: 1161)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 205ms (Views: 133.2ms | ActiveRecord: 0.7ms | Allocations: 13360)
+
+
+Started GET "/places/1" for ::1 at 2020-04-03 19:10:18 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.9ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 142)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 42.8ms | ActiveRecord: 0.9ms | Allocations: 4526)
+
+
+Started GET "/places/1" for ::1 at 2020-04-03 19:11:14 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 345)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 29.0ms | ActiveRecord: 0.2ms | Allocations: 5641)
+
+
+Started GET "/places/1" for ::1 at 2020-04-03 19:11:57 +0100
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1164)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 100ms (Views: 51.9ms | ActiveRecord: 0.8ms | Allocations: 13353)
+
+
+Started GET "/places/1" for ::1 at 2020-04-03 19:12:11 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.3ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 396)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 22.4ms | ActiveRecord: 0.3ms | Allocations: 5698)
+
+
