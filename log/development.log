@@ -914,3 +914,220 @@ Processing by PlacesController#show as HTML
 Completed 200 OK in 20ms (Views: 15.1ms | ActiveRecord: 0.3ms | Allocations: 5140)
 
 
+Started GET "/places/" for ::1 at 2020-04-04 18:40:13 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.8ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:16
+  Rendered places/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1330)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/davidmcgregor/Projects/google-maps-api-practice/public/packs
+[Webpacker] Hash: 5bd85db5b31651752d58
+Version: webpack 4.42.1
+Time: 1450ms
+Built at: 04/04/2020 6:40:19 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-d6f5a5abef7599bc4eaa.js    125 KiB  application  [emitted] [immutable]  application
+js/application-d6f5a5abef7599bc4eaa.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-d6f5a5abef7599bc4eaa.js js/application-d6f5a5abef7599bc4eaa.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/maps/initmap.js] 809 bytes {application} [built]
+[./app/javascript/packs/application.js] 775 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 5608ms (Views: 5605.7ms | ActiveRecord: 0.8ms | Allocations: 16577)
+
+
+Started GET "/places/" for ::1 at 2020-04-04 18:40:19 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.4ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:16
+  Rendered places/index.html.erb within layouts/application (Duration: 12.1ms | Allocations: 1059)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.4ms | Allocations: 5623)
+
+
+Started GET "/places/1/edit" for ::1 at 2020-04-04 18:40:21 +0100
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/edit.html.erb within layouts/application
+  Rendered places/_form.html.erb (Duration: 44.9ms | Allocations: 6365)
+  Rendered places/edit.html.erb within layouts/application (Duration: 48.6ms | Allocations: 6749)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 55.4ms | ActiveRecord: 0.2ms | Allocations: 11842)
+
+
+Started GET "/places/1/edit" for ::1 at 2020-04-04 18:40:21 +0100
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.1ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/edit.html.erb within layouts/application
+  Rendered places/_form.html.erb (Duration: 2.5ms | Allocations: 947)
+  Rendered places/edit.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1058)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.1ms | Allocations: 6073)
+
+
+Started GET "/places/1/edit" for ::1 at 2020-04-04 18:43:13 +0100
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/edit.html.erb within layouts/application
+  Rendered places/_form.html.erb (Duration: 6.7ms | Allocations: 947)
+  Rendered places/edit.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1058)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/davidmcgregor/Projects/google-maps-api-practice/public/packs
+[Webpacker] Hash: 7270592fe31ede36a955
+Version: webpack 4.42.1
+Time: 1319ms
+Built at: 04/04/2020 6:43:18 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-a45839b0efa01e55ed32.js    126 KiB  application  [emitted] [immutable]  application
+js/application-a45839b0efa01e55ed32.js.map    141 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-a45839b0efa01e55ed32.js js/application-a45839b0efa01e55ed32.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/maps/initmap.js] 1.8 KiB {application} [built]
+[./app/javascript/packs/application.js] 775 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 4870ms (Views: 4867.3ms | ActiveRecord: 0.2ms | Allocations: 7262)
+
+
+Started GET "/places/1/edit" for ::1 at 2020-04-04 18:45:29 +0100
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.6ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/edit.html.erb within layouts/application
+  Rendered places/_form.html.erb (Duration: 16.9ms | Allocations: 947)
+  Rendered places/edit.html.erb within layouts/application (Duration: 17.6ms | Allocations: 1058)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/davidmcgregor/Projects/google-maps-api-practice/public/packs
+[Webpacker] Hash: b64322272340c7a81815
+Version: webpack 4.42.1
+Time: 1480ms
+Built at: 04/04/2020 6:45:34 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-884230d1736ef22fb31f.js    126 KiB  application  [emitted] [immutable]  application
+js/application-884230d1736ef22fb31f.js.map    141 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-884230d1736ef22fb31f.js js/application-884230d1736ef22fb31f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/maps/initmap.js] 1.84 KiB {application} [built]
+[./app/javascript/packs/application.js] 775 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 4569ms (Views: 4563.8ms | ActiveRecord: 0.6ms | Allocations: 7285)
+
+
+Started GET "/places/1/edit" for ::1 at 2020-04-04 18:47:06 +0100
+Processing by PlacesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.9ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/edit.html.erb within layouts/application
+  Rendered places/_form.html.erb (Duration: 4.2ms | Allocations: 947)
+  Rendered places/edit.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1058)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/davidmcgregor/Projects/google-maps-api-practice/public/packs
+[Webpacker] Hash: 3fa855c44716f485eae1
+Version: webpack 4.42.1
+Time: 1589ms
+Built at: 04/04/2020 6:47:12 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-339ad29bdff40f775a03.js    126 KiB  application  [emitted] [immutable]  application
+js/application-339ad29bdff40f775a03.js.map    142 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-339ad29bdff40f775a03.js js/application-339ad29bdff40f775a03.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/maps/initmap.js] 2.04 KiB {application} [built]
+[./app/javascript/packs/application.js] 775 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 5374ms (Views: 5365.5ms | ActiveRecord: 0.9ms | Allocations: 7257)
+
+
+Started PATCH "/places/1" for ::1 at 2020-04-04 18:47:21 +0100
+Processing by PlacesController#update as HTML
+  Parameters: {"authenticity_token"=>"ifI5K6WzXM7h3jerSUXsWIG8Rd64Ac6GD/lShMRGURXrXDbfKzfGpaq6NA1YFkNnlLzDw5B0D9dfH2Fbh1XpVw==", "place"=>{"name"=>"Buckingham Palace", "latitude"=>"51.501564", "longitude"=>"-0.121945"}, "commit"=>"Update Place", "id"=>"1"}
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/places_controller.rb:44:in `block in update'
+  [1m[36mPlace Update (3.4ms)[0m  [1m[33mUPDATE "places" SET "longitude" = ?, "updated_at" = ? WHERE "places"."id" = ?[0m  [["longitude", -0.121945], ["updated_at", "2020-04-04 17:47:21.552468"], ["id", 1]]
+  ↳ app/controllers/places_controller.rb:44:in `block in update'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/places_controller.rb:44:in `block in update'
+Redirected to http://localhost:3000/places/1
+Completed 302 Found in 24ms (ActiveRecord: 4.6ms | Allocations: 3415)
+
+
+Started GET "/places/1" for ::1 at 2020-04-04 18:47:21 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 376)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 12.8ms | ActiveRecord: 0.2ms | Allocations: 5581)
+
+
+Started GET "/places/" for ::1 at 2020-04-04 18:47:34 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.3ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:16
+  Rendered places/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1051)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.3ms | Allocations: 5599)
+
+
+Started GET "/places/1" for ::1 at 2020-04-04 18:47:37 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 19.5ms | ActiveRecord: 0.2ms | Allocations: 5141)
+
+
+Started GET "/places/1" for ::1 at 2020-04-04 18:47:37 +0100
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places" WHERE "places"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/places_controller.rb:67:in `set_place'
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.2ms | Allocations: 5126)
+
+
+Started GET "/places/" for ::1 at 2020-04-04 18:47:39 +0100
+Processing by PlacesController#index as HTML
+  Rendering places/index.html.erb within layouts/application
+  [1m[36mPlace Load (0.2ms)[0m  [1m[34mSELECT "places".* FROM "places"[0m
+  ↳ app/views/places/index.html.erb:16
+  Rendered places/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1045)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.2ms | Allocations: 5569)
+
+
